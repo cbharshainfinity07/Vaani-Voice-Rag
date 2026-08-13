@@ -28,7 +28,7 @@ from .providers import (
 )
 from .retrieval import HybridRetriever
 from .schemas import PipelineRequest, PipelineResponse
-from .security import SlidingWindowRateLimiter
+from .security import SlidingWindowRateLimiter, public_error
 from .vector_store import LocalVectorStore, QdrantVectorStore
 
 load_dotenv()
@@ -210,7 +210,16 @@ def create_app(orchestrator: RAGOrchestrator | None = None) -> FastAPI:
             response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
         return response
 
-    pipeline = orchestrator or create_orchestrator()
+    pipeline = orchestrator
+    pipeline_lock = threading.Lock()
+
+    def get_pipeline() -> RAGOrchestrator:
+        nonlocal pipeline
+        if pipeline is None:
+            with pipeline_lock:
+                if pipeline is None:
+                    pipeline = create_orchestrator()
+        return pipeline
     query_limiter = SlidingWindowRateLimiter(
         max_requests=int(os.getenv("RATE_LIMIT_QUERY_PER_MINUTE", "30")), window_seconds=60
     )
@@ -241,25 +250,40 @@ def create_app(orchestrator: RAGOrchestrator | None = None) -> FastAPI:
 
     @app.get("/health")
     def health() -> dict[str, Any]:
-        return {"status": "ok", "service": "hh-goa-voice-rag"}
+        return {"status": "ok", "service": "hh-goa-voice-rag", "pipeline_initialized": pipeline is not None}
 
     @app.get("/api/config")
     def config() -> dict[str, Any]:
-        generator = pipeline.answer_generator
-        if isinstance(generator, OllamaCloudAnswerGenerator):
-            generation_provider = f"Ollama Cloud / {generator.model}"
-        elif isinstance(generator, OpenCodeGoResponsesAnswerGenerator):
-            generation_provider = f"OpenCode Go / {generator.model}"
-        elif isinstance(generator, OpenAICompatibleAnswerGenerator):
-            generation_provider = f"OpenAI-compatible / {generator.model}"
+        if pipeline is not None:
+            generator = pipeline.answer_generator
+            if isinstance(generator, OllamaCloudAnswerGenerator):
+                generation_provider = f"Ollama Cloud / {generator.model}"
+            elif isinstance(generator, OpenCodeGoResponsesAnswerGenerator):
+                generation_provider = f"OpenCode Go / {generator.model}"
+            elif isinstance(generator, OpenAICompatibleAnswerGenerator):
+                generation_provider = f"OpenAI-compatible / {generator.model}"
+            else:
+                generation_provider = "local grounded demo generator"
         else:
-            generation_provider = "local grounded demo generator"
+            configured_provider = os.getenv("GENERATION_PROVIDER", "auto").lower()
+            if configured_provider in {"ollama", "ollama-cloud", "ollama_cloud"} or (
+                configured_provider == "auto" and os.getenv("OLLAMA_API_KEY")
+            ):
+                generation_provider = f"Ollama Cloud / {os.getenv('OLLAMA_MODEL', 'gpt-oss:120b')}"
+            elif configured_provider in {"opencode-go", "opencode_go"}:
+                generation_provider = f"OpenCode Go / {os.getenv('OPENCODE_GO_MODEL', 'gpt-5.6-luna')}"
+            elif configured_provider in {"groq", "openai-compatible", "openai_compatible"}:
+                generation_provider = f"OpenAI-compatible / {os.getenv('GENERATION_MODEL', 'configured')}"
+            else:
+                generation_provider = "local grounded demo generator"
         return {
             "stt_provider": "Sarvam Saaras" if os.getenv("SARVAM_API_KEY") else "not configured",
             "generation_provider": generation_provider,
             "vector_backend": os.getenv("VECTOR_BACKEND", "local"),
             "embedding_backend": os.getenv("EMBEDDING_BACKEND", "hash"),
-            "dataset": "ai4bharat/MSMARCO-XI (configure data/ for full corpus)",
+            "embedding_model": os.getenv("EMBEDDING_MODEL", ""),
+            "dataset": "ai4bharat/MSMARCO-XI",
+            "pipeline_initialized": pipeline is not None,
             "security": {"rate_limits": True, "max_audio_bytes": max_audio_bytes},
         }
 
@@ -271,7 +295,15 @@ def create_app(orchestrator: RAGOrchestrator | None = None) -> FastAPI:
         if not slots.acquire(blocking=False):
             return concurrency_response()
         try:
-            return pipeline.run(PipelineRequest(query_text=payload.query, language_code=payload.language_code))
+            try:
+                active_pipeline = get_pipeline()
+            except Exception:
+                return JSONResponse(
+                    status_code=503,
+                    content={"status": "error", "answer": "The RAG service is still starting.", "error": public_error("pipeline_startup_failed")},
+                    headers={"Retry-After": "15"},
+                )
+            return active_pipeline.run(PipelineRequest(query_text=payload.query, language_code=payload.language_code))
         finally:
             slots.release()
 
@@ -293,7 +325,15 @@ def create_app(orchestrator: RAGOrchestrator | None = None) -> FastAPI:
         if not slots.acquire(blocking=False):
             return concurrency_response()
         try:
-            return pipeline.run(
+            try:
+                active_pipeline = get_pipeline()
+            except Exception:
+                return JSONResponse(
+                    status_code=503,
+                    content={"status": "error", "answer": "The RAG service is still starting.", "error": public_error("pipeline_startup_failed")},
+                    headers={"Retry-After": "15"},
+                )
+            return active_pipeline.run(
                 PipelineRequest(
                     audio_bytes=content,
                     audio_filename=audio.filename or "audio.webm",
