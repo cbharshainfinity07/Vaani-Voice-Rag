@@ -2,6 +2,12 @@
 
 Vaani is a voice-enabled Retrieval-Augmented Generation system for **HH Goa 2026 Shortlisting Task 2**. A user speaks or types a question, the system transcribes voice input, retrieves evidence from MSMARCO-XI, generates a grounded answer, and displays citations and latency.
 
+## Live demo
+
+**Website:** <https://vaani-voice-rag.vercel.app>
+
+**Backend health:** <https://vaani-voice-rag.onrender.com/health>
+
 ## Organizer requirements implemented
 
 | Requirement | Implementation |
