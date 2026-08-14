@@ -25,7 +25,7 @@ services:
       - key: VECTOR_BACKEND
         value: qdrant
       - key: EMBEDDING_BACKEND
-        value: sentence-transformers
+        value: hash
       - key: EMBEDDING_MODEL
         value: intfloat/multilingual-e5-small
       - key: QDRANT_URL
