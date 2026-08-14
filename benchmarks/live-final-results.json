@@ -1,0 +1,4196 @@
+{
+  "endpoint": "https://vaani-voice-rag.onrender.com",
+  "query_count_requested": 200,
+  "query_count_completed": 200,
+  "unique_query_count": 200,
+  "rate_limit_waits": 1,
+  "statuses": {
+    "abstained": 199,
+    "answered": 1
+  },
+  "client_elapsed_ms": {
+    "p50": 1950.594,
+    "p70": 2248.752,
+    "p100": 6657.018
+  },
+  "server_total_latency_ms": {
+    "p50": 1681.945,
+    "p70": 1967.525,
+    "p100": 6398.424
+  },
+  "rows": [
+    {
+      "query": "কৰ্পোৰেচন কি?",
+      "dataset_config": "as",
+      "query_id": 1102432,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2418.755,
+      "server_total_ms": 2046.7411298304796,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3830883651971817,
+        "retrieval": 540.764044970274,
+        "generation": 1505.1745064556599,
+        "answer_guardrails": 0.36134757101535797
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ৰেচেল কাৰ্চনে কিয় এক বাধ্যবাধকতা সহ্য কৰিবলৈ লিখিছিল",
+      "dataset_config": "as",
+      "query_id": 1102431,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2311.215,
+      "server_total_ms": 2036.263244226575,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3106147050857544,
+        "retrieval": 182.20385164022446,
+        "generation": 1853.2587327063084,
+        "answer_guardrails": 0.42998790740966797
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "পটাছিয়াম কম থকা খাদ্যৰ তালিকা।",
+      "dataset_config": "as",
+      "query_id": 90836,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2230.585,
+      "server_total_ms": 1975.768093019724,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35308487713336945,
+        "retrieval": 185.9378833323717,
+        "generation": 1789.0809439122677,
+        "answer_guardrails": 0.3395974636077881
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কাৰ্গো জাহাজ এখনৰ তল প্ৰথম ভাগ",
+      "dataset_config": "as",
+      "query_id": 55665,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 452.255,
+      "server_total_ms": 182.86732770502567,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3029182553291321,
+        "retrieval": 182.52652138471603
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "সততা বা সততার সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 205107,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1652.908,
+      "server_total_ms": 1384.4187948852777,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3056693822145462,
+        "retrieval": 182.31968395411968,
+        "generation": 1201.222589239478,
+        "answer_guardrails": 0.5023330450057983
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "লিংকন নিউত এতিয়া বেৰ'মেট্ৰিক চাপ কিমান?",
+      "dataset_config": "as",
+      "query_id": 1060386,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2333.488,
+      "server_total_ms": 1644.6163058280945,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35735592246055603,
+        "retrieval": 186.00560538470745,
+        "generation": 1457.7960651367903,
+        "answer_guardrails": 0.39943866431713104
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ষ্ট্ৰুথাৰ্ছ চিটি স্কুল জিলা ৰাজ্যিক নম্বৰ",
+      "dataset_config": "as",
+      "query_id": 1090356,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2757.818,
+      "server_total_ms": 2492.8228221833706,
+      "stage_latency_ms": {
+        "input_guardrails": 0.36298856139183044,
+        "retrieval": 184.18132327497005,
+        "generation": 2307.178972288966,
+        "answer_guardrails": 1.0284315794706345
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "চিকিৎসা সংক্ৰান্ত গাঁজাই মন্ত্ৰসমূহৰ সৈতে সহায় কৰে নেকি?",
+      "dataset_config": "as",
+      "query_id": 168868,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1935.916,
+      "server_total_ms": 1673.2822377234697,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3448687493801117,
+        "retrieval": 183.24307538568974,
+        "generation": 1489.0867602080107,
+        "answer_guardrails": 0.5414020270109177
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফ্ৰেংক গিফৰ্ডে কিমানগৰাকী মহিলাক বিয়া কৰাইছিল",
+      "dataset_config": "as",
+      "query_id": 300122,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2057.57,
+      "server_total_ms": 1775.5925226956606,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4712287336587906,
+        "retrieval": 186.8677418678999,
+        "generation": 1587.6427367329597,
+        "answer_guardrails": 0.5450136959552765
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ট্ৰাম্প প্ৰশাসনৰ কিমানটা তদন্ত চলি আছে",
+      "dataset_config": "as",
+      "query_id": 290643,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 457.728,
+      "server_total_ms": 183.12066420912743,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4105493426322937,
+        "retrieval": 182.6680228114128
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ৱাওত অনুগামীসকলক কেনেকৈ সংগ্ৰহ কৰিব লাগে তাৰ নিৰ্দেশনা",
+      "dataset_config": "as",
+      "query_id": 197590,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3197.79,
+      "server_total_ms": 2934.275846928358,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3245677798986435,
+        "retrieval": 182.4054680764675,
+        "generation": 2748.5212329775095,
+        "answer_guardrails": 2.9404014348983765
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "জেলছ কিমান দিন আছে আঁতৰত থাকিব লাগে",
+      "dataset_config": "as",
+      "query_id": 265552,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 477.302,
+      "server_total_ms": 191.94497354328632,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33867545425891876,
+        "retrieval": 191.56686402857304
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "প্ৰদূষণে মানুহৰ জনসংখ্যা কেনেকৈ বৃদ্ধি কৰে",
+      "dataset_config": "as",
+      "query_id": 227261,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2176.595,
+      "server_total_ms": 1775.5820825695992,
+      "stage_latency_ms": {
+        "input_guardrails": 1.060212031006813,
+        "retrieval": 184.82082895934582,
+        "generation": 1589.1957227140665,
+        "answer_guardrails": 0.424068421125412
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এনএইচএল প্লে'অফ ছীডিং কেনেকৈ কাম কৰে",
+      "dataset_config": "as",
+      "query_id": 227029,
+      "http_status": 200,
+      "status": "answered",
+      "refusal_reason": null,
+      "elapsed_ms": 6657.018,
+      "server_total_ms": 6398.424120619893,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3128461539745331,
+        "retrieval": 183.85706841945648,
+        "generation": 6213.163072243333,
+        "answer_guardrails": 0.9688921272754669
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ময়লাৰ ফলত আঙুঠিৰ ক্ষত হয় নেকি?",
+      "dataset_config": "as",
+      "query_id": 166290,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 806.583,
+      "server_total_ms": 538.131469860673,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3640688955783844,
+        "retrieval": 537.7285201102495
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "এটা মুকুট পুনৰ স্থাপন কৰিবলৈ কিমান খৰচ হয়",
+      "dataset_config": "as",
+      "query_id": 316415,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 435.267,
+      "server_total_ms": 182.9019896686077,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3282371908426285,
+        "retrieval": 182.51796998083591
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বেৰেল অ’ স্লাইম কি?",
+      "dataset_config": "as",
+      "query_id": 1060370,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1773.263,
+      "server_total_ms": 1443.5266871005297,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3711692988872528,
+        "retrieval": 181.63674138486385,
+        "generation": 1260.891554877162,
+        "answer_guardrails": 0.5629118531942368
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এটা ঈগলে কিমান দ্ৰুতগতিত ভ্ৰমণ কৰে",
+      "dataset_config": "as",
+      "query_id": 233826,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1712.512,
+      "server_total_ms": 1434.0361133217812,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33153779804706573,
+        "retrieval": 183.09465236961842,
+        "generation": 1250.223845243454,
+        "answer_guardrails": 0.32904744148254395
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ষ্টাবহাব টোল বিনামূলীয়া নম্বৰ",
+      "dataset_config": "as",
+      "query_id": 1090355,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2310.053,
+      "server_total_ms": 2039.300361648202,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32984837889671326,
+        "retrieval": 181.6573217511177,
+        "generation": 1856.6546738147736,
+        "answer_guardrails": 0.5975514650344849
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সৌৰ চিটি পেনেলসমূহে কিমান কিলোৱাট উৎপাদন কৰে",
+      "dataset_config": "as",
+      "query_id": 287284,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2507.39,
+      "server_total_ms": 2139.668283984065,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2943165600299835,
+        "retrieval": 180.85490725934505,
+        "generation": 1957.9903613775969,
+        "answer_guardrails": 0.4699118435382843
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "প্ৰথম প্ৰতিৰক্ষা নাকৰ ফিল্টাৰ বিক্ৰীৰ সংখ্যা",
+      "dataset_config": "as",
+      "query_id": 187378,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1888.339,
+      "server_total_ms": 1630.7152062654495,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4570111632347107,
+        "retrieval": 186.97904609143734,
+        "generation": 1442.6396265625954,
+        "answer_guardrails": 0.5253814160823822
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "উইণ্ড'জ ৮-ত কিদৰে ক্লিয়াৰ ডেস্কটপ আইকন পাব",
+      "dataset_config": "as",
+      "query_id": 361332,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2848.108,
+      "server_total_ms": 2575.2870589494705,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32186880707740784,
+        "retrieval": 180.6304305791855,
+        "generation": 2393.450416624546,
+        "answer_guardrails": 0.8197184652090073
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ডেল্টা বাংগালোৰলৈ উৰি যায়",
+      "dataset_config": "as",
+      "query_id": 165349,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1945.916,
+      "server_total_ms": 1654.8199020326138,
+      "stage_latency_ms": {
+        "input_guardrails": 0.38282759487628937,
+        "retrieval": 181.2397837638855,
+        "generation": 1472.6218096911907,
+        "answer_guardrails": 0.4961695522069931
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কেণ্টালুপ পূৰঠ হ'বলৈ কিমান সময় লাগে",
+      "dataset_config": "as",
+      "query_id": 260880,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 435.369,
+      "server_total_ms": 185.25581061840057,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3533456474542618,
+        "retrieval": 184.86120738089085
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "পৰীক্ষামূলক পাইপৰ সৈতে কনভাৰ্টাৰ সলনি কৰাৰ খৰচ",
+      "dataset_config": "as",
+      "query_id": 110842,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2916.801,
+      "server_total_ms": 2654.439762234688,
+      "stage_latency_ms": {
+        "input_guardrails": 0.37558749318122864,
+        "retrieval": 182.17164278030396,
+        "generation": 2471.2731167674065,
+        "answer_guardrails": 0.5527809262275696
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সংজ্ঞা নিৰ্ধাৰণ স্বেচ্ছামূলক",
+      "dataset_config": "as",
+      "query_id": 116898,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2972.654,
+      "server_total_ms": 2705.4601553827524,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32942742109298706,
+        "retrieval": 181.61069229245186,
+        "generation": 2522.1853964030743,
+        "answer_guardrails": 1.2699849903583527
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সময় কেনেকৈ ডিগ্ৰী গণনা কৰা হয়",
+      "dataset_config": "as",
+      "query_id": 237853,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2893.608,
+      "server_total_ms": 2629.3951272964478,
+      "stage_latency_ms": {
+        "input_guardrails": 0.279916450381279,
+        "retrieval": 183.53144079446793,
+        "generation": 2445.0843892991543,
+        "answer_guardrails": 0.4393812268972397
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বাৰ্টাৰ ব্যৱস্থা আৰু ইয়াৰ সমস্যাবোৰ কি",
+      "dataset_config": "as",
+      "query_id": 1060361,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1957.48,
+      "server_total_ms": 1688.317496329546,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4131682217121124,
+        "retrieval": 182.11797252297401,
+        "generation": 1505.3313076496124,
+        "answer_guardrails": 0.38917921483516693
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ডিড ৰবলক্সত এটা পাৱাৰ ৰেঞ্জাৰ ইভেণ্ট আছিলনে?",
+      "dataset_config": "as",
+      "query_id": 144943,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2776.109,
+      "server_total_ms": 2525.8790757507086,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33958815038204193,
+        "retrieval": 353.5644840449095,
+        "generation": 2171.4024785906076,
+        "answer_guardrails": 0.5058702081441879
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "জলবায়ু বতৰৰ অধ্যয়ন",
+      "dataset_config": "as",
+      "query_id": 1090353,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 448.606,
+      "server_total_ms": 185.82403287291527,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33177807927131653,
+        "retrieval": 185.45610271394253
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কেনেকৈ তেল মিশ্ৰিত ভেষজ পানীয় তৈয়াৰ কৰিব",
+      "dataset_config": "as",
+      "query_id": 368321,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2102.935,
+      "server_total_ms": 1851.8207632005215,
+      "stage_latency_ms": {
+        "input_guardrails": 0.36534853279590607,
+        "retrieval": 180.80049380660057,
+        "generation": 1670.2020391821861,
+        "answer_guardrails": 0.38878992199897766
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সমাজবিজ্ঞানৰ সংস্কৃতি সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 113570,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 433.708,
+      "server_total_ms": 180.8189246803522,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3327988088130951,
+        "retrieval": 180.44711649417877
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "মূলবাদী ডিঙিৰ সংজ্ঞা দিয়ক",
+      "dataset_config": "as",
+      "query_id": 126172,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2678.934,
+      "server_total_ms": 2424.044920131564,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34533627331256866,
+        "retrieval": 182.0771787315607,
+        "generation": 2241.055628284812,
+        "answer_guardrails": 0.5039479583501816
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আধা কাপ হাউ বহুত আউন্স",
+      "dataset_config": "as",
+      "query_id": 198064,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2439.525,
+      "server_total_ms": 2168.2650726288557,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3486350178718567,
+        "retrieval": 182.30866640806198,
+        "generation": 1985.1229693740606,
+        "answer_guardrails": 0.41662901639938354
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কামৰ দিন সংজ্ঞায়িত কৰক",
+      "dataset_config": "as",
+      "query_id": 129220,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 4368.627,
+      "server_total_ms": 4118.613729253411,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30365772545337677,
+        "retrieval": 180.0471879541874,
+        "generation": 3937.7886950969696,
+        "answer_guardrails": 0.41067786514759064
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ইয়াক্সবক্স গেইমসমূহৰ দাম কিমান?",
+      "dataset_config": "as",
+      "query_id": 331047,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2009.761,
+      "server_total_ms": 1752.543730661273,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30173733830451965,
+        "retrieval": 183.25495719909668,
+        "generation": 1568.5022752732038,
+        "answer_guardrails": 0.4267711192369461
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্বাক্ষৰিত চুক্তি এটা বাতিল কৰিব পাৰি নেকি",
+      "dataset_config": "as",
+      "query_id": 63220,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2147.751,
+      "server_total_ms": 1879.0295105427504,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3231056034564972,
+        "retrieval": 181.29581399261951,
+        "generation": 1696.1036622524261,
+        "answer_guardrails": 1.2446362525224686
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কাঁচৰ পেনত হোৱা ফাট মেৰামতি কৰিব পাৰি নেকি?",
+      "dataset_config": "as",
+      "query_id": 74039,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2476.564,
+      "server_total_ms": 2206.643231213093,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3996286541223526,
+        "retrieval": 180.73329329490662,
+        "generation": 2025.1559428870678,
+        "answer_guardrails": 0.29465556144714355
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "যিটো বেছিকেল ইনছেন আছে সেইটো কি",
+      "dataset_config": "as",
+      "query_id": 1060359,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2598.443,
+      "server_total_ms": 2326.9078340381384,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3583580255508423,
+        "retrieval": 186.8673525750637,
+        "generation": 2138.7983728200197,
+        "answer_guardrails": 0.7961876690387726
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বনিভা কিমান ফলপ্ৰসূ",
+      "dataset_config": "as",
+      "query_id": 229231,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2620.648,
+      "server_total_ms": 2360.1904828101397,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3426056355237961,
+        "retrieval": 181.48252740502357,
+        "generation": 2177.717873826623,
+        "answer_guardrails": 0.5733929574489594
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আপুনি কিমান দিন ধৰি কাৰ্ব চক্ৰ চলাব লাগে",
+      "dataset_config": "as",
+      "query_id": 267380,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2297.77,
+      "server_total_ms": 2034.3069899827242,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3422684967517853,
+        "retrieval": 179.827980697155,
+        "generation": 1851.027114316821,
+        "answer_guardrails": 3.039587289094925
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ষ্টাই কাৰণে",
+      "dataset_config": "as",
+      "query_id": 1090352,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2561.037,
+      "server_total_ms": 2297.346118837595,
+      "stage_latency_ms": {
+        "input_guardrails": 2.707619220018387,
+        "retrieval": 193.81023198366165,
+        "generation": 2100.1457758247852,
+        "answer_guardrails": 0.6094519048929214
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ৰেডিং কাৰ বাবে সৰ্বোচ্চ ৰেকৰ্ড তাপমাত্ৰা",
+      "dataset_config": "as",
+      "query_id": 202891,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3063.81,
+      "server_total_ms": 2807.1376234292984,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3191046416759491,
+        "retrieval": 180.3142335265875,
+        "generation": 2626.081332564354,
+        "answer_guardrails": 0.3595277667045593
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "দুগৰাকী ভগ্নীৰ মূল্যৰ ব্রাঞ্চ",
+      "dataset_config": "as",
+      "query_id": 112025,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2073.392,
+      "server_total_ms": 1824.99953918159,
+      "stage_latency_ms": {
+        "input_guardrails": 0.37366896867752075,
+        "retrieval": 181.42001703381538,
+        "generation": 1642.8010426461697,
+        "answer_guardrails": 0.34436769783496857
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মেট লাউৱাৰে এটা বছৰত কিমান উপাৰ্জন কৰে",
+      "dataset_config": "as",
+      "query_id": 317450,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2298.694,
+      "server_total_ms": 2045.4968195408583,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3829691559076309,
+        "retrieval": 183.1150520592928,
+        "generation": 1860.449692234397,
+        "answer_guardrails": 1.4661308377981186
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কেলিফৰ্ণিয়াৰ ঘৰুৱা হিংসাৰ আইনসমূহ",
+      "dataset_config": "as",
+      "query_id": 58871,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2802.205,
+      "server_total_ms": 2545.828429982066,
+      "stage_latency_ms": {
+        "input_guardrails": 0.45388005673885345,
+        "retrieval": 180.95718696713448,
+        "generation": 2363.7523613870144,
+        "answer_guardrails": 0.5980338901281357
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এখন এক্সেল শ্বীট কেনেকৈ প্ৰিণ্ট কৰিব",
+      "dataset_config": "as",
+      "query_id": 373460,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "missing_citation",
+      "elapsed_ms": 3712.972,
+      "server_total_ms": 3462.1082469820976,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3948155790567398,
+        "retrieval": 354.8493217676878,
+        "generation": 3106.3014771789312,
+        "answer_guardrails": 0.4980601370334625
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মৃত্যুৰ মূৰ দলীয় সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 116095,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1999.097,
+      "server_total_ms": 1708.854604512453,
+      "stage_latency_ms": {
+        "input_guardrails": 3.0073747038841248,
+        "retrieval": 183.8867887854576,
+        "generation": 1521.45473100245,
+        "answer_guardrails": 0.43920986354351044
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভুট্টাৰ খাদ্য আৰু ভুট্টাৰ আটা একেই",
+      "dataset_config": "as",
+      "query_id": 21860,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2358.811,
+      "server_total_ms": 2105.559665709734,
+      "stage_latency_ms": {
+        "input_guardrails": 1.523822546005249,
+        "retrieval": 182.53389187157154,
+        "generation": 1917.5261035561562,
+        "answer_guardrails": 3.9056334644556046
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মৌলিক কি? ইউনি",
+      "dataset_config": "as",
+      "query_id": 1060348,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2710.173,
+      "server_total_ms": 2457.773169502616,
+      "stage_latency_ms": {
+        "input_guardrails": 0.6486233323812485,
+        "retrieval": 181.49028904736042,
+        "generation": 2275.2027176320553,
+        "answer_guardrails": 0.36628730595111847
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "উপাদানসমূহৰ এনট্ৰপি",
+      "dataset_config": "as",
+      "query_id": 180855,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 626.982,
+      "server_total_ms": 356.7710127681494,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3396756947040558,
+        "retrieval": 356.39563389122486
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ৰঙা ৰঙৰ সোৱাদযুক্ত আপেলেই ভাল আপেলৰ চাটনি তৈয়াৰ কৰে",
+      "dataset_config": "as",
+      "query_id": 158720,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3383.585,
+      "server_total_ms": 3104.6832595020533,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3085080534219742,
+        "retrieval": 180.40545284748077,
+        "generation": 2923.4567377716303,
+        "answer_guardrails": 0.4193205386400223
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এটা ষ্টাম্প কভাৰে কিমান ওজন বহন কৰে",
+      "dataset_config": "as",
+      "query_id": 330463,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2409.599,
+      "server_total_ms": 2133.9682694524527,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34324638545513153,
+        "retrieval": 181.50684796273708,
+        "generation": 1951.5754524618387,
+        "answer_guardrails": 0.4754401743412018
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "প্ৰাপ্তবয়স্কসকলৰ সীমাৰেখাৰ ব্যক্তিত্বৰ বিকাৰৰ লক্ষণসমূহ।",
+      "dataset_config": "as",
+      "query_id": 1090350,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2213.985,
+      "server_total_ms": 1952.1802756935358,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3374367952346802,
+        "retrieval": 182.9277016222477,
+        "generation": 1768.3235947042704,
+        "answer_guardrails": 0.5212724208831787
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভিটামিন ডি-ক সহায় কৰা খাদ্যসমূহ",
+      "dataset_config": "as",
+      "query_id": 190327,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1929.291,
+      "server_total_ms": 1676.409311592579,
+      "stage_latency_ms": {
+        "input_guardrails": 8.388588204979897,
+        "retrieval": 189.98382799327374,
+        "generation": 1471.6636966913939,
+        "answer_guardrails": 0.5022604018449783
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কেৰিবিয়ান ডিচেম্বৰৰ গড় তাপমাত্ৰা",
+      "dataset_config": "as",
+      "query_id": 44760,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2129.832,
+      "server_total_ms": 1854.7904323786497,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34159794449806213,
+        "retrieval": 180.60427717864513,
+        "generation": 1673.2486449182034,
+        "answer_guardrails": 0.5271304398775101
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভুট্টাৰ এটা কণা কিমান সময় মাইক্ৰ'ৱেভ কৰিব লাগে?",
+      "dataset_config": "as",
+      "query_id": 271597,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2430.397,
+      "server_total_ms": 2154.4787865132093,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32052770256996155,
+        "retrieval": 187.66036815941334,
+        "generation": 1966.0534001886845,
+        "answer_guardrails": 0.3799479454755783
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "অষ্ট্ৰেলিয়া অলডিৰ খোলাৰ সময়",
+      "dataset_config": "as",
+      "query_id": 15344,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1965.561,
+      "server_total_ms": 1707.567434757948,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2936460077762604,
+        "retrieval": 180.79766258597374,
+        "generation": 1526.0886400938034,
+        "answer_guardrails": 0.31270645558834076
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "চিকাগোৰ পৰা ৰোনাল্ড ৰিগান বিমানবন্দৰলৈ বিমান সেৱা।",
+      "dataset_config": "as",
+      "query_id": 187928,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2801.748,
+      "server_total_ms": 2554.952936246991,
+      "stage_latency_ms": {
+        "input_guardrails": 0.29877573251724243,
+        "retrieval": 180.4156731814146,
+        "generation": 2373.7091291695833,
+        "answer_guardrails": 0.4643388092517853
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্থানীয় ডিস্কৰ সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 131336,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 443.972,
+      "server_total_ms": 185.51425635814667,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32364390790462494,
+        "retrieval": 185.15486642718315
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বেটমেন মেনশ্যনৰ নাম কি",
+      "dataset_config": "as",
+      "query_id": 1060343,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1844.723,
+      "server_total_ms": 1567.3720706254244,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3119874745607376,
+        "retrieval": 181.6378105431795,
+        "generation": 1384.7467172890902,
+        "answer_guardrails": 0.6062127649784088
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ৱাইফাই টেবলেটবোৰ কেনেকৈ কাম কৰে",
+      "dataset_config": "as",
+      "query_id": 220865,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2060.494,
+      "server_total_ms": 1812.1933620423079,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35335496068000793,
+        "retrieval": 182.39783681929111,
+        "generation": 1629.0532276034355,
+        "answer_guardrails": 0.3240387886762619
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ৰোমান এটউডৰ বয়স কিমান",
+      "dataset_config": "as",
+      "query_id": 336352,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2428.743,
+      "server_total_ms": 2177.0453974604607,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3997068852186203,
+        "retrieval": 183.80552530288696,
+        "generation": 1992.3318028450012,
+        "answer_guardrails": 0.4133395850658417
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কান্ধৰ পুনৰুদ্ধাৰ কিমান সময় লাগে",
+      "dataset_config": "as",
+      "query_id": 264507,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1940.765,
+      "server_total_ms": 1687.351604923606,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3085080534219742,
+        "retrieval": 181.5260574221611,
+        "generation": 1505.0249099731445,
+        "answer_guardrails": 0.42773038148880005
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভাৰতীয়সকলে ভাত খায়",
+      "dataset_config": "as",
+      "query_id": 1101287,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2083.11,
+      "server_total_ms": 1814.041681587696,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2944059669971466,
+        "retrieval": 182.21546337008476,
+        "generation": 1630.9661008417606,
+        "answer_guardrails": 0.49178116023540497
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "চাব শ্লেব সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 1090349,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 434.031,
+      "server_total_ms": 185.40106154978275,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33034756779670715,
+        "retrieval": 185.03425270318985
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "আস্ত ম্বা",
+      "dataset_config": "as",
+      "query_id": 9671,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2131.963,
+      "server_total_ms": 1872.2311537712812,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32984837889671326,
+        "retrieval": 180.35131134092808,
+        "generation": 1691.0011190921068,
+        "answer_guardrails": 0.4731602966785431
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "লেনকাষ্টাৰ পাৰ পৰা ফিলাডেলফিয়া কিমান দূৰত আছে",
+      "dataset_config": "as",
+      "query_id": 232017,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2189.411,
+      "server_total_ms": 1925.8646201342344,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32832659780979156,
+        "retrieval": 182.9307284206152,
+        "generation": 1742.1156913042068,
+        "answer_guardrails": 0.4274696111679077
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কেলিফৰ্ণিয়াৰ নাৰ্ক'টিক আইনসমূহ",
+      "dataset_config": "as",
+      "query_id": 58928,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2811.79,
+      "server_total_ms": 2542.296592146158,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3245268017053604,
+        "retrieval": 184.38608944416046,
+        "generation": 2356.9552712142467,
+        "answer_guardrails": 0.5641523748636246
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "চিভিএল গুদামৰ বাবে তত্ত্বাৱধায়কৰ দৰমহাৰ হাৰ কিমান",
+      "dataset_config": "as",
+      "query_id": 328321,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2192.904,
+      "server_total_ms": 1943.0212080478668,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3145989030599594,
+        "retrieval": 182.20522440969944,
+        "generation": 1759.219840168953,
+        "answer_guardrails": 1.212824136018753
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সৰু তৰমুজত থকা কেলৰি",
+      "dataset_config": "as",
+      "query_id": 59804,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1924.763,
+      "server_total_ms": 1660.0455325096846,
+      "stage_latency_ms": {
+        "input_guardrails": 0.38240663707256317,
+        "retrieval": 188.32535482943058,
+        "generation": 1470.8028361201286,
+        "answer_guardrails": 0.46750158071517944
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বেটাৰীৰ জীৱনকাল কিমান সময় হয়",
+      "dataset_config": "as",
+      "query_id": 1060342,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1902.537,
+      "server_total_ms": 1648.427091538906,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31148456037044525,
+        "retrieval": 182.41428583860397,
+        "generation": 1465.3328023850918,
+        "answer_guardrails": 0.31203776597976685
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "চাইট্ৰিক্স জেনাপ চাৰ্ভাৰৰ সৈতে সংযোগ কৰিব নোৱাৰি",
+      "dataset_config": "as",
+      "query_id": 81945,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2436.968,
+      "server_total_ms": 2164.5934488624334,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3416072577238083,
+        "retrieval": 186.16030551493168,
+        "generation": 1977.580165490508,
+        "answer_guardrails": 0.4429686814546585
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এক্সকম ২ কেনেকৈ মসৃণভাৱে চলাব পাৰি",
+      "dataset_config": "as",
+      "query_id": 370050,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3741.782,
+      "server_total_ms": 3491.10852740705,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3656167536973953,
+        "retrieval": 180.96959590911865,
+        "generation": 3309.317162260413,
+        "answer_guardrails": 0.3941282629966736
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মাইৰা গ্ৰীষ্মকাল কিমান পুৰণি",
+      "dataset_config": "as",
+      "query_id": 336062,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 438.542,
+      "server_total_ms": 185.56389212608337,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2864152193069458,
+        "retrieval": 185.24366058409214
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কাৰ্ব ইভেণ্ট চেণ্টাৰ",
+      "dataset_config": "as",
+      "query_id": 113649,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1867.666,
+      "server_total_ms": 1596.8353003263474,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34345872700214386,
+        "retrieval": 179.8742227256298,
+        "generation": 1416.138106957078,
+        "answer_guardrails": 0.40602870285511017
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সংজ্ঞা: থ্ৰুপুট",
+      "dataset_config": "as",
+      "query_id": 129807,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 434.79,
+      "server_total_ms": 182.02142044901848,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30075758695602417,
+        "retrieval": 181.68427981436253
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ছুবাৰু হেড গেছকেটৰ লক্ষণসমূহ",
+      "dataset_config": "as",
+      "query_id": 1090347,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3270.533,
+      "server_total_ms": 3017.736179754138,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3903098404407501,
+        "retrieval": 186.30369007587433,
+        "generation": 2830.577351152897,
+        "answer_guardrails": 0.39964914321899414
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্কটছডেল পুনৰ্ব্যৱহাৰ কৰা চহৰৰ সময়সূচী",
+      "dataset_config": "as",
+      "query_id": 92849,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2349.175,
+      "server_total_ms": 2083.6429316550493,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31107664108276367,
+        "retrieval": 180.74662424623966,
+        "generation": 1902.0476285368204,
+        "answer_guardrails": 0.4557594656944275
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "জাপানী পোকেমন কল'ছিয়াম চেলেবি উজ্জ্বল হ'ব পাৰে",
+      "dataset_config": "as",
+      "query_id": 70489,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2482.608,
+      "server_total_ms": 2227.321131154895,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3108680248260498,
+        "retrieval": 181.5909929573536,
+        "generation": 2044.8145810514688,
+        "answer_guardrails": 0.5340594798326492
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফেলনি অভিযোগৰ সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 134646,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 453.669,
+      "server_total_ms": 183.34952741861343,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3929808735847473,
+        "retrieval": 182.916646823287
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "উচ্চ টিএছ স্তৰৰ ফলত গৰ্ভধাৰণৰ নেতিবাচক পৰীক্ষা হ’ব পাৰে নেকি?",
+      "dataset_config": "as",
+      "query_id": 62459,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1558.239,
+      "server_total_ms": 1304.9767967313528,
+      "stage_latency_ms": {
+        "input_guardrails": 0.39643794298171997,
+        "retrieval": 184.20713767409325,
+        "generation": 1119.7703760117292,
+        "answer_guardrails": 0.5011893808841705
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "গেলেণ্টাইন সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 1100338,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 445.801,
+      "server_total_ms": 182.00454860925674,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3083236515522003,
+        "retrieval": 181.65169283747673
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বাতিল কৰা চেকৰ সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 81586,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2027.727,
+      "server_total_ms": 1775.7208440452814,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35805627703666687,
+        "retrieval": 182.32860788702965,
+        "generation": 1592.6481485366821,
+        "answer_guardrails": 0.3246162086725235
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বুকুৰ বিষ ওপৰৰ সোঁফালে অনুভৱ হয় যেন কিবা এটা তাত আটকি আছে যেতিয়া মই গিলিম",
+      "dataset_config": "as",
+      "query_id": 91452,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2146.766,
+      "server_total_ms": 1896.642865613103,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33948756754398346,
+        "retrieval": 180.93340657651424,
+        "generation": 1714.8363832384348,
+        "answer_guardrails": 0.47012045979499817
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফৰেনছিক প্ৰমাণ প্ৰযুক্তিবিদৰ শিক্ষা",
+      "dataset_config": "as",
+      "query_id": 190844,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 444.252,
+      "server_total_ms": 181.6059909760952,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3079269081354141,
+        "retrieval": 181.2496017664671
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কিমান ফলপ্ৰসূ হয় চটপটীয়া পানী",
+      "dataset_config": "as",
+      "query_id": 229215,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 619.066,
+      "server_total_ms": 354.55212742090225,
+      "stage_latency_ms": {
+        "input_guardrails": 0.27797557413578033,
+        "retrieval": 354.24283519387245
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "আপোনাৰ চেকিং একাউণ্টে আপোনাৰ ক্ৰেডিট স্ক'ৰক কেনেদৰে প্ৰভাৱিত কৰিব পাৰে",
+      "dataset_config": "as",
+      "query_id": 211441,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2212.09,
+      "server_total_ms": 1943.390903994441,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3754477947950363,
+        "retrieval": 180.09068816900253,
+        "generation": 1762.4716088175774,
+        "answer_guardrails": 0.3869086503982544
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এটা চলি থকা শৌচাগাৰৰ আৱৰ্জনাৰ পৰা কিমান পানী ওলাব পাৰে",
+      "dataset_config": "as",
+      "query_id": 330054,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2457.456,
+      "server_total_ms": 2179.194560274482,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3428179770708084,
+        "retrieval": 181.9068267941475,
+        "generation": 1996.514718979597,
+        "answer_guardrails": 0.3467276692390442
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ছাবক'ন্ড্ৰেল ফাইব্ৰ'চিষ্টিক অৰ্থ",
+      "dataset_config": "as",
+      "query_id": 1090346,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3014.147,
+      "server_total_ms": 2763.274360448122,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3259461373090744,
+        "retrieval": 183.10707993805408,
+        "generation": 2579.3344527482986,
+        "answer_guardrails": 0.44246017932891846
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আইআৰএছ ৰেকৰ্ডসমূহ কিমান দিনলৈ ৰাখিব",
+      "dataset_config": "as",
+      "query_id": 265717,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1932.118,
+      "server_total_ms": 1678.2658770680428,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3259871155023575,
+        "retrieval": 181.01518787443638,
+        "generation": 1496.2239190936089,
+        "answer_guardrails": 0.5877241492271423
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সম্পূৰ্ণ সেট দন্ত চিকিৎসক হিচাপে কিমান বিকিৰণ হয়",
+      "dataset_config": "as",
+      "query_id": 326813,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2524.234,
+      "server_total_ms": 2255.531592294574,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3117471933364868,
+        "retrieval": 180.91331608593464,
+        "generation": 2073.7488493323326,
+        "answer_guardrails": 0.4900619387626648
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফেডাৰেল ঠিকাদাৰৰ সংজ্ঞা",
+      "dataset_config": "as",
+      "query_id": 185914,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3188.932,
+      "server_total_ms": 2932.4013851583004,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3847293555736542,
+        "retrieval": 184.6238523721695,
+        "generation": 2746.5712539851665,
+        "answer_guardrails": 0.7491447031497955
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বাট্টি কি?",
+      "dataset_config": "as",
+      "query_id": 1060341,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 607.672,
+      "server_total_ms": 353.62657718360424,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3422088921070099,
+        "retrieval": 353.24149765074253
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "পোৰ্টেবল ৰঙীন টিভি ভিডিঅ'কনৰ মূল্য",
+      "dataset_config": "as",
+      "query_id": 106218,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1807.354,
+      "server_total_ms": 1522.681262344122,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3372449427843094,
+        "retrieval": 181.27352371811867,
+        "generation": 1340.3801694512367,
+        "answer_guardrails": 0.6288029253482819
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "নিয়মীয়া কাৰ্যকলাপক সংজ্ঞায়িত কৰক",
+      "dataset_config": "as",
+      "query_id": 126636,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 461.461,
+      "server_total_ms": 181.67806416749954,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2942867577075958,
+        "retrieval": 181.35009706020355
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "পৃথিৱীৰ আটাইতকৈ ডাঙৰ অৰিগেমি",
+      "dataset_config": "as",
+      "query_id": 53335,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1851.286,
+      "server_total_ms": 1588.7699760496616,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31575746834278107,
+        "retrieval": 180.70232309401035,
+        "generation": 1407.2301052510738,
+        "answer_guardrails": 0.46766921877861023
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এৰেত কোষ সংজ্ঞায়িত কৰা",
+      "dataset_config": "as",
+      "query_id": 129959,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2320.62,
+      "server_total_ms": 2053.2665494829416,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2889372408390045,
+        "retrieval": 180.49307726323605,
+        "generation": 1871.9960805028677,
+        "answer_guardrails": 0.4138574004173279
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আপুনি কি চিল হৈ সুৰা পান কৰে?",
+      "dataset_config": "as",
+      "query_id": 160108,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 437.426,
+      "server_total_ms": 186.2290482968092,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3204271197319031,
+        "retrieval": 185.87249144911766
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ফৰাচী অনুবাদ: য'ত আছে",
+      "dataset_config": "as",
+      "query_id": 191749,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3405.863,
+      "server_total_ms": 3151.5042055398226,
+      "stage_latency_ms": {
+        "input_guardrails": 0.39557740092277527,
+        "retrieval": 181.02041818201542,
+        "generation": 2969.5756770670414,
+        "answer_guardrails": 0.43176114559173584
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কর্পোরেশন কী?",
+      "dataset_config": "bn",
+      "query_id": 1102432,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 436.171,
+      "server_total_ms": 181.65366165339947,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32171793282032013,
+        "retrieval": 181.2938842922449
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "র‍্যাচেল কারসন কেন একটি বাধ্যবাধকতা সহ্য করার জন্য লিখেছিলেন",
+      "dataset_config": "bn",
+      "query_id": 1102431,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2489.023,
+      "server_total_ms": 2236.458845436573,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3613494336605072,
+        "retrieval": 181.68478272855282,
+        "generation": 2053.8116842508316,
+        "answer_guardrails": 0.5246996879577637
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "পটাসিয়াম কম থাকা খাবারের তালিকা।",
+      "dataset_config": "bn",
+      "query_id": 90836,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1718.144,
+      "server_total_ms": 1445.3459922224283,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31573884189128876,
+        "retrieval": 181.38550594449043,
+        "generation": 1263.117266818881,
+        "answer_guardrails": 0.4552416503429413
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি পণ্যবাহী জাহাজের নীচের সামনের অংশ",
+      "dataset_config": "bn",
+      "query_id": 55665,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 3050.071,
+      "server_total_ms": 2798.9889942109585,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3600083291530609,
+        "retrieval": 181.66331015527248,
+        "generation": 2616.415111348033,
+        "answer_guardrails": 0.4787985235452652
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "লিঙ্কনে এখন ব্যারোমেট্রিক চাপ কত?",
+      "dataset_config": "bn",
+      "query_id": 1060386,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1947.785,
+      "server_total_ms": 1694.4589745253325,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3035459667444229,
+        "retrieval": 184.1380037367344,
+        "generation": 1507.4908565729856,
+        "answer_guardrails": 2.461623400449753
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্ট্রুথার্স শহর বিদ্যালয় জেলা রাজ্য নম্বর",
+      "dataset_config": "bn",
+      "query_id": 1090356,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 455.967,
+      "server_total_ms": 187.15009465813637,
+      "stage_latency_ms": {
+        "input_guardrails": 3.4305639564990997,
+        "retrieval": 183.59130062162876
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "চিকিৎসা গাঁজা মাদকের সঙ্গে সাহায্য করে কিনা?",
+      "dataset_config": "bn",
+      "query_id": 168868,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 452.689,
+      "server_total_ms": 184.441439807415,
+      "stage_latency_ms": {
+        "input_guardrails": 2.28252075612545,
+        "retrieval": 182.11610987782478
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ফ্র্যাঙ্ক গিফোর্ড কতজন মহিলাকে বিয়ে করেছিলেন",
+      "dataset_config": "bn",
+      "query_id": 300122,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1961.726,
+      "server_total_ms": 1685.6233067810535,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3429986536502838,
+        "retrieval": 180.54012767970562,
+        "generation": 1504.1534677147865,
+        "answer_guardrails": 0.5203019827604294
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ট্রাম্প প্রশাসনের কতগুলি তদন্ত চলছে।",
+      "dataset_config": "bn",
+      "query_id": 290643,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 492.645,
+      "server_total_ms": 184.86266024410725,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3360677510499954,
+        "retrieval": 184.49130468070507
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ওয়াও-তে অনুসারীদের কীভাবে সংগ্রহ করতে হয় তার নির্দেশিকা",
+      "dataset_config": "bn",
+      "query_id": 197590,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2512.436,
+      "server_total_ms": 2243.605526164174,
+      "stage_latency_ms": {
+        "input_guardrails": 0.7903985679149628,
+        "retrieval": 181.51933886110783,
+        "generation": 2060.81916205585,
+        "answer_guardrails": 0.41180849075317383
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "জেলস কতদিন অবসর নেয়।",
+      "dataset_config": "bn",
+      "query_id": 265552,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2785.962,
+      "server_total_ms": 2514.921512454748,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3343690186738968,
+        "retrieval": 180.68979121744633,
+        "generation": 2333.4196154028177,
+        "answer_guardrails": 0.4176795482635498
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "দূষণ কীভাবে মানুষের জনসংখ্যা বৃদ্ধি করে।",
+      "dataset_config": "bn",
+      "query_id": 227261,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1806.437,
+      "server_total_ms": 1558.337315917015,
+      "stage_latency_ms": {
+        "input_guardrails": 1.5276111662387848,
+        "retrieval": 184.36151184141636,
+        "generation": 1371.974853798747,
+        "answer_guardrails": 0.4120189696550369
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এনএইচএল প্লে-অফ সিডিং কিভাবে কাজ করে",
+      "dataset_config": "bn",
+      "query_id": 227029,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 429.943,
+      "server_total_ms": 182.01168067753315,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2771243453025818,
+        "retrieval": 181.6843319684267
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কি ময়লা আজবাত সৃষ্টি করে?",
+      "dataset_config": "bn",
+      "query_id": 166290,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2713.098,
+      "server_total_ms": 2141.284918412566,
+      "stage_latency_ms": {
+        "input_guardrails": 0.5441717803478241,
+        "retrieval": 614.0753105282784,
+        "generation": 1526.0697547346354,
+        "answer_guardrails": 0.4982408136129379
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি মুকুট পুনর্বার লাগানোর খরচ কত",
+      "dataset_config": "bn",
+      "query_id": 316415,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 468.431,
+      "server_total_ms": 184.13002416491508,
+      "stage_latency_ms": {
+        "input_guardrails": 0.27779489755630493,
+        "retrieval": 183.8232148438692
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ব্যারেল ও স্লাইম কী?",
+      "dataset_config": "bn",
+      "query_id": 1060370,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 435.338,
+      "server_total_ms": 181.37062527239323,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3868862986564636,
+        "retrieval": 180.94550631940365
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "একটি ঈগল কত দ্রুত ভ্রমণ করে।",
+      "dataset_config": "bn",
+      "query_id": 233826,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1909.907,
+      "server_total_ms": 1624.053517356515,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31755678355693817,
+        "retrieval": 181.610569357872,
+        "generation": 1441.6564032435417,
+        "answer_guardrails": 0.39133988320827484
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্টাবহাব টোল ফ্রি নম্বর",
+      "dataset_config": "bn",
+      "query_id": 1090355,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1978.723,
+      "server_total_ms": 1728.210374712944,
+      "stage_latency_ms": {
+        "input_guardrails": 0.314345583319664,
+        "retrieval": 182.98286013305187,
+        "generation": 1544.337833300233,
+        "answer_guardrails": 0.5098395049571991
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সৌর শহরের প্যানেলগুলি কতগুলি কিলোওয়াট উৎপাদন করে।",
+      "dataset_config": "bn",
+      "query_id": 287284,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2251.014,
+      "server_total_ms": 1997.5794069468975,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3271978348493576,
+        "retrieval": 181.17979913949966,
+        "generation": 1815.5930005013943,
+        "answer_guardrails": 0.4141777753829956
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "প্রথম প্রতিরক্ষা নাসার ফিল্টার বিক্রয় সংখ্যা",
+      "dataset_config": "bn",
+      "query_id": 187378,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2027.33,
+      "server_total_ms": 1756.7522525787354,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30243583023548126,
+        "retrieval": 180.68775907158852,
+        "generation": 1575.3017850220203,
+        "answer_guardrails": 0.39826706051826477
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "উইণ্ডোজ ৮-এ কিভাবে ডেস্কটপ আইকনটি পরিষ্কার করতে হয়",
+      "dataset_config": "bn",
+      "query_id": 361332,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1916.926,
+      "server_total_ms": 1658.9632220566273,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32087601721286774,
+        "retrieval": 185.25013700127602,
+        "generation": 1472.8291798382998,
+        "answer_guardrails": 0.5012210458517075
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ডুবলুমধ্য বাঁক বাঁগালোরে উড়ে যায়",
+      "dataset_config": "bn",
+      "query_id": 165349,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1865.539,
+      "server_total_ms": 1604.5580804347992,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2870950847864151,
+        "retrieval": 182.76871368288994,
+        "generation": 1420.967848971486,
+        "answer_guardrails": 0.4721004515886307
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কতদিন করে ক্যান্টালুপ পাকাবে।",
+      "dataset_config": "bn",
+      "query_id": 260880,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 642.015,
+      "server_total_ms": 356.6376678645611,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32657571136951447,
+        "retrieval": 356.27490282058716
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "পরীক্ষামূলক পাইপ দিয়ে রূপান্তরক প্রতিস্থাপন করার খরচ",
+      "dataset_config": "bn",
+      "query_id": 110842,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1689.474,
+      "server_total_ms": 1419.8464769870043,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33682771027088165,
+        "retrieval": 183.4604199975729,
+        "generation": 1235.5132661759853,
+        "answer_guardrails": 0.476030632853508
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সংজ্ঞা নির্ধারণ নির্বিচারে",
+      "dataset_config": "bn",
+      "query_id": 116898,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 443.267,
+      "server_total_ms": 183.27259458601475,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2876650542020798,
+        "retrieval": 182.94969014823437
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "স্নাতক ডিগ্রি প্রদানের সময়কাল কীভাবে গণনা করা হয়",
+      "dataset_config": "bn",
+      "query_id": 237853,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "missing_citation",
+      "elapsed_ms": 2594.855,
+      "server_total_ms": 1907.9996310174465,
+      "stage_latency_ms": {
+        "input_guardrails": 0.41496939957141876,
+        "retrieval": 181.74875527620316,
+        "generation": 1725.40676407516,
+        "answer_guardrails": 0.32738596200942993
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বার্টার সিস্টেম এবং এর সমস্যা কী",
+      "dataset_config": "bn",
+      "query_id": 1060361,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1586.438,
+      "server_total_ms": 1338.5806158185005,
+      "stage_latency_ms": {
+        "input_guardrails": 0.294296070933342,
+        "retrieval": 183.40939469635487,
+        "generation": 1154.1424989700317,
+        "answer_guardrails": 0.6756223738193512
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ডিড রবলক্সের একটি পাওয়ার রেঞ্জার ইভেন্ট ছিল কি?",
+      "dataset_config": "bn",
+      "query_id": 144943,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 450.187,
+      "server_total_ms": 181.49152770638466,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34176744520664215,
+        "retrieval": 181.11293204128742
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "জলবায়ু আবহাওয়ার অধ্যয়ন",
+      "dataset_config": "bn",
+      "query_id": 1090353,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 465.341,
+      "server_total_ms": 182.51671269536018,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3223363310098648,
+        "retrieval": 182.13556334376335
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কীভাবে তেল মিশ্রিত ভেষজ ইনফিউশন তৈরি করতে হয়",
+      "dataset_config": "bn",
+      "query_id": 368321,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 447.306,
+      "server_total_ms": 183.52778255939484,
+      "stage_latency_ms": {
+        "input_guardrails": 1.7994493246078491,
+        "retrieval": 181.6887315362692
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "সমাজতত্ত্বের সংস্কৃতি সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 113570,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2244.44,
+      "server_total_ms": 1978.9461605250835,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4051290452480316,
+        "retrieval": 192.333510145545,
+        "generation": 1785.725999623537,
+        "answer_guardrails": 0.41428767144680023
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মৌলিক ঘাড়",
+      "dataset_config": "bn",
+      "query_id": 126172,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2111.958,
+      "server_total_ms": 1858.4962766617537,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32490864396095276,
+        "retrieval": 356.2783729285002,
+        "generation": 1501.057518646121,
+        "answer_guardrails": 0.7632561028003693
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "অর্ধেক কাপ কত আউন্স",
+      "dataset_config": "bn",
+      "query_id": 198064,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1701.417,
+      "server_total_ms": 1450.4019655287266,
+      "stage_latency_ms": {
+        "input_guardrails": 1.0369401425123215,
+        "retrieval": 183.23839269578457,
+        "generation": 1265.6408995389938,
+        "answer_guardrails": 0.422939658164978
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কাজের দিনটিকে সংজ্ঞায়িত করুন।",
+      "dataset_config": "bn",
+      "query_id": 129220,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 458.836,
+      "server_total_ms": 183.70753526687622,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30963681638240814,
+        "retrieval": 183.3635289222002
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ইউনিক্সবক্স গেমের দাম কত?",
+      "dataset_config": "bn",
+      "query_id": 331047,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1834.859,
+      "server_total_ms": 1583.392035216093,
+      "stage_latency_ms": {
+        "input_guardrails": 0.360339879989624,
+        "retrieval": 181.36258609592915,
+        "generation": 1401.165286079049,
+        "answer_guardrails": 0.4418902099132538
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি স্বাক্ষরিত বিধান বাতিল করা যায় কি?",
+      "dataset_config": "bn",
+      "query_id": 63220,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1623.237,
+      "server_total_ms": 1359.4054020941257,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30373595654964447,
+        "retrieval": 182.34520591795444,
+        "generation": 1176.226070150733,
+        "answer_guardrails": 0.44963881373405457
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কাচের প্যানে ফাটল মেরামত করা যায় কি?",
+      "dataset_config": "bn",
+      "query_id": 74039,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 445.583,
+      "server_total_ms": 182.69628286361694,
+      "stage_latency_ms": {
+        "input_guardrails": 0.36274828016757965,
+        "retrieval": 182.29114264249802
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "যা বেসাল ইনলা",
+      "dataset_config": "bn",
+      "query_id": 1060359,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 455.856,
+      "server_total_ms": 181.92828819155693,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2976357936859131,
+        "retrieval": 181.59434013068676
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বোনিভা কতটা কার্যকরী",
+      "dataset_config": "bn",
+      "query_id": 229231,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 437.575,
+      "server_total_ms": 183.80756676197052,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3802664577960968,
+        "retrieval": 183.39166045188904
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "আপনার কতদিন কার্বন চক্র করতে হবে",
+      "dataset_config": "bn",
+      "query_id": 267380,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1845.848,
+      "server_total_ms": 1578.7477977573872,
+      "stage_latency_ms": {
+        "input_guardrails": 1.7456654459238052,
+        "retrieval": 182.42439813911915,
+        "generation": 1394.0470851957798,
+        "answer_guardrails": 0.45897066593170166
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্টাই কারণ",
+      "dataset_config": "bn",
+      "query_id": 1090352,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1755.639,
+      "server_total_ms": 1505.1850266754627,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3383271396160126,
+        "retrieval": 182.48263001441956,
+        "generation": 1321.894459426403,
+        "answer_guardrails": 0.4042666405439377
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "লাল রঙের জন্য সর্বোচ্চ রেকর্ড তাপমাত্রা",
+      "dataset_config": "bn",
+      "query_id": 202891,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2270.847,
+      "server_total_ms": 2015.2201559394598,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3232266753911972,
+        "retrieval": 187.79060244560242,
+        "generation": 1826.5500012785196,
+        "answer_guardrails": 0.4897899925708771
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "দুই বোনের ব্রাঞ্চের দাম",
+      "dataset_config": "bn",
+      "query_id": 112025,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 431.288,
+      "server_total_ms": 181.64717964828014,
+      "stage_latency_ms": {
+        "input_guardrails": 0.351637601852417,
+        "retrieval": 181.2572032213211
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ম্যাট লাউয়ার বছরে কত টাকা উপার্জন করে।",
+      "dataset_config": "bn",
+      "query_id": 317450,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2247.782,
+      "server_total_ms": 1965.6542334705591,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33735670149326324,
+        "retrieval": 182.93030746281147,
+        "generation": 1781.763656064868,
+        "answer_guardrails": 0.5566813051700592
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ক্যালিফোর্নিয়ার অভ্যন্তরীণ সহিংসতা আইন",
+      "dataset_config": "bn",
+      "query_id": 58871,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 441.942,
+      "server_total_ms": 186.96664460003376,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30093640089035034,
+        "retrieval": 186.63076870143414
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "এক্সেল শীট কীভাবে প্রিন্ট করবেন",
+      "dataset_config": "bn",
+      "query_id": 373460,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 443.294,
+      "server_total_ms": 184.3105163425207,
+      "stage_latency_ms": {
+        "input_guardrails": 0.643683597445488,
+        "retrieval": 183.62516351044178
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ডেথ হেড ইউনিটের সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 116095,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1996.556,
+      "server_total_ms": 1724.7792184352875,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3888998180627823,
+        "retrieval": 182.36088566482067,
+        "generation": 1541.5282025933266,
+        "answer_guardrails": 0.43790973722934723
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভুট্টার খাবার এবং ভুট্টার আটা একই।",
+      "dataset_config": "bn",
+      "query_id": 21860,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2040.957,
+      "server_total_ms": 1764.8753356188536,
+      "stage_latency_ms": {
+        "input_guardrails": 0.32440759241580963,
+        "retrieval": 183.71985480189323,
+        "generation": 1580.4188959300518,
+        "answer_guardrails": 0.3528464585542679
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "মৌলিক কী?",
+      "dataset_config": "bn",
+      "query_id": 1060348,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 4878.788,
+      "server_total_ms": 4620.3185096383095,
+      "stage_latency_ms": {
+        "input_guardrails": 0.26980601251125336,
+        "retrieval": 181.19007162749767,
+        "generation": 4437.909362837672,
+        "answer_guardrails": 0.879678875207901
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "উপাদানগুলির এনট্রপি",
+      "dataset_config": "bn",
+      "query_id": 180855,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2055.773,
+      "server_total_ms": 1760.5342920869589,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4688594490289688,
+        "retrieval": 182.88195505738258,
+        "generation": 1576.6993761062622,
+        "answer_guardrails": 0.4152171313762665
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "লাল সুস্বাদু আপেল ভালো আপেল সস তৈরি করে।",
+      "dataset_config": "bn",
+      "query_id": 158720,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1966.416,
+      "server_total_ms": 1699.3142049759626,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3257766366004944,
+        "retrieval": 187.1678289026022,
+        "generation": 1511.2743861973286,
+        "answer_guardrails": 0.48175081610679626
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি স্ট্যাম্প কভার কতটা ওজন করে।",
+      "dataset_config": "bn",
+      "query_id": 330463,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1716.227,
+      "server_total_ms": 1462.5834450125694,
+      "stage_latency_ms": {
+        "input_guardrails": 0.40259771049022675,
+        "retrieval": 183.3037156611681,
+        "generation": 1278.425732627511,
+        "answer_guardrails": 0.3839675337076187
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "প্রাপ্তবয়স্কদের মধ্যে সীমান্তবর্তী ব্যক্তিত্বজনিত ব্যাধির লক্ষণগুলি",
+      "dataset_config": "bn",
+      "query_id": 1090350,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2080.959,
+      "server_total_ms": 1805.6956175714731,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3709886223077774,
+        "retrieval": 354.4502053409815,
+        "generation": 1450.3240436315536,
+        "answer_guardrails": 0.48074871301651
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভিটামিন ডি-এর জন্য সাহায্যকারী খাবার",
+      "dataset_config": "bn",
+      "query_id": 190327,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2132.375,
+      "server_total_ms": 1853.92439737916,
+      "stage_latency_ms": {
+        "input_guardrails": 0.36959536373615265,
+        "retrieval": 185.08917652070522,
+        "generation": 1667.9198928177357,
+        "answer_guardrails": 0.48187002539634705
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ক্যারিবীয় ডিসেম্বরে গাড়িতে গড় তাপমাত্রা",
+      "dataset_config": "bn",
+      "query_id": 44760,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2256.55,
+      "server_total_ms": 1971.8900583684444,
+      "stage_latency_ms": {
+        "input_guardrails": 0.29170699417591095,
+        "retrieval": 181.9427777081728,
+        "generation": 1789.043139666319,
+        "answer_guardrails": 0.5149021744728088
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভুট্টার এক কান কতদিন মাইক্রোওয়েভ করতে হবে?",
+      "dataset_config": "bn",
+      "query_id": 271597,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 436.96,
+      "server_total_ms": 181.97367899119854,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3531668335199356,
+        "retrieval": 181.58032931387424
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "অস্ট্রেলিয়ার অল্ডি খোলার সময়",
+      "dataset_config": "bn",
+      "query_id": 15344,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 441.743,
+      "server_total_ms": 186.1761175096035,
+      "stage_latency_ms": {
+        "input_guardrails": 0.4387814551591873,
+        "retrieval": 185.700885951519
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "শিকাগো থেকে রোনাল্ড রিগান বিমানবন্দরে উড়ান",
+      "dataset_config": "bn",
+      "query_id": 187928,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 447.059,
+      "server_total_ms": 183.6652234196663,
+      "stage_latency_ms": {
+        "input_guardrails": 0.36226771771907806,
+        "retrieval": 183.26602317392826
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "স্থানীয় ডিস্কের সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 131336,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2130.971,
+      "server_total_ms": 1870.276527479291,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35128556191921234,
+        "retrieval": 181.34228326380253,
+        "generation": 1688.2170885801315,
+        "answer_guardrails": 0.3052465617656708
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ব্যাটম্যান ম্যানশনের নাম কী?",
+      "dataset_config": "bn",
+      "query_id": 1060343,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2011.766,
+      "server_total_ms": 1759.7719468176365,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3156866878271103,
+        "retrieval": 182.3477353900671,
+        "generation": 1576.4297172427177,
+        "answer_guardrails": 0.5910024046897888
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ওয়াইফাই ট্যাবলেট কীভাবে কাজ করে",
+      "dataset_config": "bn",
+      "query_id": 220865,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 462.879,
+      "server_total_ms": 181.2337525188923,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2998560667037964,
+        "retrieval": 180.89624494314194
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "রোমান অ্যাটউডের বয়স কত বছর?",
+      "dataset_config": "bn",
+      "query_id": 336352,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 453.436,
+      "server_total_ms": 181.54458701610565,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3200359642505646,
+        "retrieval": 181.18626065552235
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "কাঁধের পুনরুদ্ধার কতদিন স্থায়ী হয়?",
+      "dataset_config": "bn",
+      "query_id": 264507,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2337.986,
+      "server_total_ms": 2082.8586854040623,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2981163561344147,
+        "retrieval": 182.39061906933784,
+        "generation": 1899.6643349528313,
+        "answer_guardrails": 0.43516792356967926
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ভারতীয়রা ভাত খায় কি?",
+      "dataset_config": "bn",
+      "query_id": 1101287,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 440.588,
+      "server_total_ms": 183.7497130036354,
+      "stage_latency_ms": {
+        "input_guardrails": 0.302756205201149,
+        "retrieval": 183.41820873320103
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "সাব স্ল্যাব সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 1090349,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2394.265,
+      "server_total_ms": 2145.8331122994423,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33360719680786133,
+        "retrieval": 181.50198832154274,
+        "generation": 1963.5144881904125,
+        "answer_guardrails": 0.38152746856212616
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ল্যানকাস্টার থেকে ফিলাডেলফিয়া কতদূর?",
+      "dataset_config": "bn",
+      "query_id": 232017,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2501.677,
+      "server_total_ms": 2247.8669844567776,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30718743801116943,
+        "retrieval": 182.93103761970997,
+        "generation": 2063.921455293894,
+        "answer_guardrails": 0.6381440907716751
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ক্যালিফোর্নিয়া নারকোটিক আইন",
+      "dataset_config": "bn",
+      "query_id": 58928,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1928.448,
+      "server_total_ms": 1670.982839539647,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2815667539834976,
+        "retrieval": 183.20854380726814,
+        "generation": 1486.6238124668598,
+        "answer_guardrails": 0.7968395948410034
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কভান্তার গুদামের জন্য ততটা সুপারভাইজারের বেতন হার",
+      "dataset_config": "bn",
+      "query_id": 328321,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2200.722,
+      "server_total_ms": 1952.359126880765,
+      "stage_latency_ms": {
+        "input_guardrails": 3.5535842180252075,
+        "retrieval": 182.10058845579624,
+        "generation": 1766.1760319024324,
+        "answer_guardrails": 0.46170875430107117
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি ছোট শসায় ক্যালোরি কত",
+      "dataset_config": "bn",
+      "query_id": 59804,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2091.365,
+      "server_total_ms": 1842.7676148712635,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34069642424583435,
+        "retrieval": 182.61507153511047,
+        "generation": 1659.256897866726,
+        "answer_guardrails": 0.47240033745765686
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ব্যাটারির জীবনকাল কতটা?",
+      "dataset_config": "bn",
+      "query_id": 1060342,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1743.478,
+      "server_total_ms": 1489.2999157309532,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3105662763118744,
+        "retrieval": 185.25300547480583,
+        "generation": 1303.1178582459688,
+        "answer_guardrails": 0.5533713847398758
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সিট্রিক্স জেনাপ সার্ভারের সঙ্গে সংযোগ করতে পারে না",
+      "dataset_config": "bn",
+      "query_id": 81945,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "missing_citation",
+      "elapsed_ms": 2140.572,
+      "server_total_ms": 1868.4653155505657,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3047361969947815,
+        "retrieval": 181.57030828297138,
+        "generation": 1686.1031390726566,
+        "answer_guardrails": 0.41913799941539764
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "এক্সকম ২ কেমন মসৃণভাবে চালানো যায়",
+      "dataset_config": "bn",
+      "query_id": 370050,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 445.451,
+      "server_total_ms": 182.10346810519695,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3434550017118454,
+        "retrieval": 181.72048032283783
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "মাইরার গ্রীষ্মকাল কত পুরনো!",
+      "dataset_config": "bn",
+      "query_id": 336062,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1836.976,
+      "server_total_ms": 1586.3140393048525,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3687385469675064,
+        "retrieval": 184.6058052033186,
+        "generation": 1400.7043726742268,
+        "answer_guardrails": 0.5490202456712723
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কার্ব ইভেন্ট সেন্টার",
+      "dataset_config": "bn",
+      "query_id": 113649,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1762.114,
+      "server_total_ms": 1510.0412480533123,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33691897988319397,
+        "retrieval": 183.05628187954426,
+        "generation": 1326.1946123093367,
+        "answer_guardrails": 0.38797780871391296
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সংজ্ঞা: থ্রুপুট",
+      "dataset_config": "bn",
+      "query_id": 129807,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 447.085,
+      "server_total_ms": 182.89783596992493,
+      "stage_latency_ms": {
+        "input_guardrails": 0.5789715796709061,
+        "retrieval": 182.2809148579836
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "সুবারু হেড গ্যাসকেট লক্ষণসমূহ",
+      "dataset_config": "bn",
+      "query_id": 1090347,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1805.655,
+      "server_total_ms": 1554.4812493026257,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30139461159706116,
+        "retrieval": 187.54373863339424,
+        "generation": 1365.9616820514202,
+        "answer_guardrails": 0.5525220185518265
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "স্কটসডেল পুনর্ব্যবহার কর্মসূচীর শহর",
+      "dataset_config": "bn",
+      "query_id": 92849,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 445.465,
+      "server_total_ms": 181.38929456472397,
+      "stage_latency_ms": {
+        "input_guardrails": 0.29451586306095123,
+        "retrieval": 181.05999566614628
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "জাপানি পোকেমন কলোসিয়াম সেলেবি উজ্জ্বল হতে পারে।",
+      "dataset_config": "bn",
+      "query_id": 70489,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2509.166,
+      "server_total_ms": 2245.5708011984825,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3811884671449661,
+        "retrieval": 181.4944688230753,
+        "generation": 2063.251858577132,
+        "answer_guardrails": 0.37859007716178894
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফেলনি অভিযোগের সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 134646,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 441.944,
+      "server_total_ms": 182.92140774428844,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3171078860759735,
+        "retrieval": 182.57238902151585
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "উচ্চতর টিএস স্তর কি নেতিবাচক গর্ভাবস্থা পরীক্ষার কারণ হতে পারে?",
+      "dataset_config": "bn",
+      "query_id": 62459,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 445.381,
+      "server_total_ms": 182.01745674014091,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33022649586200714,
+        "retrieval": 181.65593221783638
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "গ্যালান্টাইন সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 1100338,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 434.188,
+      "server_total_ms": 182.3256742209196,
+      "stage_latency_ms": {
+        "input_guardrails": 0.35220012068748474,
+        "retrieval": 181.9382794201374
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বাতিল করা চেকের সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 81586,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 432.413,
+      "server_total_ms": 180.9782162308693,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3632679581642151,
+        "retrieval": 180.58130703866482
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বুকে ব্যথা ডানদিকের উপরের অংশে হলে মনে হয় যেন কিছু একটা আটকে আছে যখন আমি গিলতে চাই।",
+      "dataset_config": "bn",
+      "query_id": 91452,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2330.89,
+      "server_total_ms": 2082.4612081050873,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3438163548707962,
+        "retrieval": 491.829976439476,
+        "generation": 1589.8594930768013,
+        "answer_guardrails": 0.3680288791656494
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফরেনসিক প্রমাণ প্রযুক্তিবিদ স্কুলিং",
+      "dataset_config": "bn",
+      "query_id": 190844,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1851.743,
+      "server_total_ms": 1585.922870784998,
+      "stage_latency_ms": {
+        "input_guardrails": 0.34798868000507355,
+        "retrieval": 181.51281960308552,
+        "generation": 1403.6322254687548,
+        "answer_guardrails": 0.36425888538360596
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "কতটা কার্যকর সাসি জল",
+      "dataset_config": "bn",
+      "query_id": 229215,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1823.289,
+      "server_total_ms": 1527.9027223587036,
+      "stage_latency_ms": {
+        "input_guardrails": 0.31770579516887665,
+        "retrieval": 183.08318220078945,
+        "generation": 1343.7293153256178,
+        "answer_guardrails": 0.6432142108678818
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আপনার চেকিং অ্যাকাউন্ট কীভাবে আপনার ক্রেডিট স্কোরকে প্রভাবিত করতে পারে।",
+      "dataset_config": "bn",
+      "query_id": 211441,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1953.403,
+      "server_total_ms": 1674.8641207814217,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30094385147094727,
+        "retrieval": 183.39370004832745,
+        "generation": 1490.6388334929943,
+        "answer_guardrails": 0.46561285853385925
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "একটি চলমান টয়লেট বর্জ্য কতটা জল নিতে পারে।",
+      "dataset_config": "bn",
+      "query_id": 330054,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1805.631,
+      "server_total_ms": 1536.363271996379,
+      "stage_latency_ms": {
+        "input_guardrails": 0.5716904997825623,
+        "retrieval": 182.54332058131695,
+        "generation": 1352.648178115487,
+        "answer_guardrails": 0.5376394838094711
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "সাবকন্ড্রাল ফাইব্রোসিস্টিক অর্থ",
+      "dataset_config": "bn",
+      "query_id": 1090346,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "missing_citation",
+      "elapsed_ms": 2527.182,
+      "server_total_ms": 2256.782852113247,
+      "stage_latency_ms": {
+        "input_guardrails": 0.27610547840595245,
+        "retrieval": 185.19078567624092,
+        "generation": 2070.8439983427525,
+        "answer_guardrails": 0.41362084448337555
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আই.আর.এস রেকর্ড কতদিন রাখবেন?",
+      "dataset_config": "bn",
+      "query_id": 265717,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1726.789,
+      "server_total_ms": 1453.0766047537327,
+      "stage_latency_ms": {
+        "input_guardrails": 0.27605704963207245,
+        "retrieval": 355.61995580792427,
+        "generation": 1096.5891033411026,
+        "answer_guardrails": 0.5096700042486191
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "পূর্ণ সেট দাঁতের ডাক্তার কতটা বিকিরণ করেন",
+      "dataset_config": "bn",
+      "query_id": 326813,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1934.281,
+      "server_total_ms": 1662.7432089298964,
+      "stage_latency_ms": {
+        "input_guardrails": 0.9908117353916168,
+        "retrieval": 181.8152330815792,
+        "generation": 1479.3491419404745,
+        "answer_guardrails": 0.5043502897024155
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "ফেডারেল ঠিকাদারের সংজ্ঞা",
+      "dataset_config": "bn",
+      "query_id": 185914,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1885.091,
+      "server_total_ms": 1628.9495080709457,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3813989460468292,
+        "retrieval": 185.74356846511364,
+        "generation": 1442.3812609165907,
+        "answer_guardrails": 0.38416869938373566
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "বাট্টি কী?",
+      "dataset_config": "bn",
+      "query_id": 1060341,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 611.11,
+      "server_total_ms": 354.20179553329945,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3097560256719589,
+        "retrieval": 353.8559600710869
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "পোর্টেবল রঙিন টিভি ভিডিওকনের দাম",
+      "dataset_config": "bn",
+      "query_id": 106218,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1529.009,
+      "server_total_ms": 1273.3927555382252,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30501559376716614,
+        "retrieval": 181.36783316731453,
+        "generation": 1091.1502670496702,
+        "answer_guardrails": 0.481143593788147
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "দৈনন্দিন কার্যকলাপের সংজ্ঞা দিন।",
+      "dataset_config": "bn",
+      "query_id": 126636,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 436.83,
+      "server_total_ms": 183.4176480770111,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3359466791152954,
+        "retrieval": 183.04559960961342
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "বিশ্বের বৃহত্তম ওরিগ্যামি",
+      "dataset_config": "bn",
+      "query_id": 53335,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2063.793,
+      "server_total_ms": 1796.922767534852,
+      "stage_latency_ms": {
+        "input_guardrails": 0.33193640410900116,
+        "retrieval": 180.59868924319744,
+        "generation": 1615.5092529952526,
+        "answer_guardrails": 0.4200488328933716
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "অ্যারেতে কোষের সংজ্ঞা দেওয়া",
+      "dataset_config": "bn",
+      "query_id": 129959,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 2204.084,
+      "server_total_ms": 1954.8294823616743,
+      "stage_latency_ms": {
+        "input_guardrails": 0.30671432614326477,
+        "retrieval": 180.36970123648643,
+        "generation": 1773.6239098012447,
+        "answer_guardrails": 0.46068988740444183
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "আপনি কি চিল ওয়াইন করবেন?",
+      "dataset_config": "bn",
+      "query_id": 160108,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 449.828,
+      "server_total_ms": 186.88044138252735,
+      "stage_latency_ms": {
+        "input_guardrails": 0.2943947911262512,
+        "retrieval": 186.55148521065712
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": "ফরাসি অনুবাদ যেখানে",
+      "dataset_config": "bn",
+      "query_id": 191749,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 452.629,
+      "server_total_ms": 182.44679644703865,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3025457262992859,
+        "retrieval": 182.1042075753212
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    },
+    {
+      "query": ". શું એક કોર્પોરેશન છે?",
+      "dataset_config": "gu",
+      "query_id": 1102432,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "ungrounded_answer",
+      "elapsed_ms": 1921.944,
+      "server_total_ms": 1671.1256206035614,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3971364349126816,
+        "retrieval": 182.71219544112682,
+        "generation": 1487.373722717166,
+        "answer_guardrails": 0.5778800696134567
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1,
+        "generation": 1,
+        "answer_guardrails": 1
+      }
+    },
+    {
+      "query": "રશેલ કાર્સને શા માટે સહન કરવાની જવાબદારી લખી?",
+      "dataset_config": "gu",
+      "query_id": 1102431,
+      "http_status": 200,
+      "status": "abstained",
+      "refusal_reason": "off_topic",
+      "elapsed_ms": 434.279,
+      "server_total_ms": 184.7858689725399,
+      "stage_latency_ms": {
+        "input_guardrails": 0.3177262842655182,
+        "retrieval": 184.43561904132366
+      },
+      "attempts": {
+        "input_guardrails": 1,
+        "retrieval": 1
+      }
+    }
+  ],
+  "note": "Live deployed text API; external Sarvam voice latency is not included."
+}
