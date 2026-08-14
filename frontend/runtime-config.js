@@ -1,3 +1,2 @@
-// Set this to the public FastAPI URL when the frontend is deployed to Vercel.
-// Leave empty for the local same-origin development server.
-window.VAANI_API_BASE = "";
+// Public backend URL. Never put provider secrets in this file.
+window.VAANI_API_BASE = "https://vaani-voice-rag.onrender.com";
