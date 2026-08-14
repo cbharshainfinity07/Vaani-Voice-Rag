@@ -100,23 +100,9 @@ class QdrantVectorStore:
                 collection_name=collection,
                 vectors_config=models.VectorParams(size=dim, distance=models.Distance.COSINE),
             )
-        else:
-            offset = None
-            while True:
-                points, offset = self.client.scroll(
-                    collection_name=collection,
-                    limit=1000,
-                    offset=offset,
-                    with_payload=True,
-                    with_vectors=False,
-                )
-                for point in points:
-                    if point.payload and point.payload.get("chunk"):
-                        chunk = Chunk(**point.payload["chunk"])
-                        record_id = str(point.payload.get("record_id") or chunk.id)
-                        self.records[record_id] = ([], chunk)
-                if offset is None or not points:
-                    break
+        # Remote retrieval queries Qdrant directly. Do not scroll every payload
+        # during API startup: large collections make the first request exceed
+        # hosted proxy timeouts and provide no benefit to `search()`.
 
     def upsert(self, records: Iterable[tuple[str, list[float], Chunk]]) -> None:
         points = []
