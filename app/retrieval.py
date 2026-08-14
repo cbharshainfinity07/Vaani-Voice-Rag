@@ -90,7 +90,8 @@ class HybridRetriever:
         lexical_scores = self.bm25.score(query)
         lexical_ranked = sorted(lexical_scores.items(), key=lambda item: item[1], reverse=True)
         lexical_rank = {chunk_id: (rank, score) for rank, (chunk_id, score) in enumerate(lexical_ranked, 1)}
-        by_id = {chunk.id: chunk for chunk in self.chunks}
+        by_id = {chunk.id: chunk for chunk, _ in dense_hits}
+        by_id.update({chunk.id: chunk for chunk in self.chunks})
         candidate_ids = set(dense_rank) | {chunk_id for chunk_id, score in lexical_ranked[:candidate_k] if score > 0}
         query_tokens = set(tokens(query))
         results: list[RetrievalResult] = []
