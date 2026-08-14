@@ -62,6 +62,6 @@ class GuardrailEngine:
         overlap = len(context_tokens & answer_tokens) / max(1, len(answer_tokens))
         if overlap < self.min_grounding_overlap:
             return GuardrailDecision(False, "ungrounded_answer", "I don't have enough evidence to support that answer.", overlap)
-        if not re.search(r"\[S\d+\]", answer):
+        if not re.search(r"(?:\[S\d+\]|【S\d+】)", answer):
             return GuardrailDecision(False, "missing_citation", "I couldn't verify an evidence-backed answer.")
         return GuardrailDecision(True, score=overlap)
