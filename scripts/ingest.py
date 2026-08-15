@@ -156,15 +156,23 @@ def load_msmarco_xi_sample_rows(dataset: str, config: str, split: str, limit: in
         raise RuntimeError("Install production extras for fast Parquet sampling") from exc
     parquet_url = msmarco_xi_parquet_url(dataset, config, split)
     columns = ["source_lang", "target_lang", "Answer", "query_id", "query_type", "passages", "Eng_Query", "Eng_Answer", "query"]
+    rows_yielded = 0
     with fsspec.open(parquet_url, "rb", block_size=8 * 1024 * 1024, cache_type="readahead") as handle:
         parquet_file = parquet.ParquetFile(handle)
         available = set(parquet_file.schema_arrow.names)
         selected = [column for column in columns if column in available]
-        table = parquet_file.read_row_group(0, columns=selected).slice(0, limit)
-        for row in table.to_pylist():
-            row["_dataset_config"] = config
-            row["_dataset_split"] = split
-            yield row
+        for row_group_index in range(parquet_file.num_row_groups):
+            remaining = limit - rows_yielded
+            if remaining <= 0:
+                break
+            table = parquet_file.read_row_group(row_group_index, columns=selected)
+            if table.num_rows > remaining:
+                table = table.slice(0, remaining)
+            for row in table.to_pylist():
+                row["_dataset_config"] = config
+                row["_dataset_split"] = split
+                yield row
+                rows_yielded += 1
 
 
 def load_rows_from_huggingface(dataset: str, config: str | None, split: str, limit: int | None) -> Iterable[dict[str, Any]]:
