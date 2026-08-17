@@ -17,7 +17,7 @@ services:
       - key: GENERATION_TIMEOUT_S
         value: "30"
       - key: GENERATION_PROVIDER
-        value: ollama
+        value: groq
       - key: SARVAM_MODEL
         value: saaras:v4
       - key: HF_TOKEN
