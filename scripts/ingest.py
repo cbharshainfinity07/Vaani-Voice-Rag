@@ -306,6 +306,16 @@ def main() -> int:
         url = args.qdrant_url or os.getenv("QDRANT_URL", "")
         api_key = args.qdrant_api_key or os.getenv("QDRANT_API_KEY", "")
         collection = args.qdrant_collection or os.getenv("QDRANT_COLLECTION", "voice_rag")
+        if args.qdrant_recreate:
+            from qdrant_client import QdrantClient
+            client = QdrantClient(url=url, api_key=api_key)
+            try:
+                client.delete_collection(collection)
+                print(f"Recreated Qdrant collection: {collection}")
+            except Exception as exc:
+                print(f"Note: could not delete collection: {exc}")
+            finally:
+                client.close()
         store = QdrantVectorStore(
             dim=embedder.dim,
             url=url,
@@ -314,12 +324,6 @@ def main() -> int:
             batch_size=int(os.getenv("QDRANT_BATCH_SIZE", "16")),
             timeout_s=int(os.getenv("QDRANT_TIMEOUT_S", "300")),
         )
-        if args.qdrant_recreate:
-            try:
-                store.client.delete_collection(collection)
-                print(f"Recreated Qdrant collection: {collection}")
-            except Exception as exc:
-                print(f"Note: could not delete collection: {exc}")
     else:
         store = LocalVectorStore(embedder.dim)
 
