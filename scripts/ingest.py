@@ -321,10 +321,7 @@ def main() -> int:
             except Exception as exc:
                 print(f"Note: could not delete collection: {exc}")
     else:
-        store = LocalVectorStore(
-            path=Path(args.qdrant_path),
-            dim=embedder.dim,
-        )
+        store = LocalVectorStore(embedder.dim)
 
     document_batch: list[Document] = []
     eval_rows: list[dict[str, Any]] = []
