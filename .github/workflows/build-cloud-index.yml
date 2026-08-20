@@ -4,9 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       rows_per_language:
-        description: "Rows from each MSMARCO-XI language (100 is recommended)"
+        description: "Rows from each MSMARCO-XI language"
         required: true
         default: "100"
+        type: string
+      language_configs:
+        description: "Space-separated list of MSMARCO-XI configs (e.g. 'en hi mr kn')"
+        required: true
+        default: "en hi mr kn"
         type: string
 
 jobs:
@@ -33,17 +38,18 @@ jobs:
       - name: Install production dependencies
         run: python -m pip install -e ".[production]"
 
-      - name: Build all-language cloud index
+      - name: Build selected-language cloud index
         run: >-
           python scripts/ingest.py
           --dataset ai4bharat/MSMARCO-XI
-          --all-configs
+          --configs ${{ inputs.language_configs }}
           --split validation
           --limit "${{ inputs.rows_per_language }}"
           --backend sentence-transformers
           --model intfloat/multilingual-e5-small
           --vector-backend qdrant
           --qdrant-collection voice_rag_demo
+          --qdrant-recreate
           --batch-size 16
           --eval-queries benchmarks/msmarco_xi_eval.jsonl
           --eval-count 500

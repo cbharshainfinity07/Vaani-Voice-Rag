@@ -239,6 +239,7 @@ def main() -> int:
     source.add_argument("--input", type=Path, help="JSONL, JSON or CSV file")
     source.add_argument("--dataset", help="Hugging Face dataset id, e.g. ai4bharat/MSMARCO-XI")
     parser.add_argument("--config", default=None, help="Optional Hugging Face dataset configuration")
+    parser.add_argument("--configs", nargs="+", default=None, help="Multiple Hugging Face dataset configurations, e.g. --configs en hi mr kn")
     parser.add_argument("--all-configs", action="store_true", help="Index all 14 MSMARCO-XI language configurations")
     parser.add_argument("--split", default=None, help="One Hugging Face split (default: train)")
     parser.add_argument("--splits", nargs="+", default=None, help="Multiple Hugging Face splits, e.g. --splits train validation")
@@ -251,6 +252,7 @@ def main() -> int:
     parser.add_argument("--qdrant-url", default=None, help="Optional Qdrant Cloud URL; defaults to QDRANT_URL")
     parser.add_argument("--qdrant-api-key", default=None, help="Optional Qdrant Cloud key; defaults to QDRANT_API_KEY")
     parser.add_argument("--qdrant-collection", default=None, help="Collection name; defaults to QDRANT_COLLECTION or voice_rag")
+    parser.add_argument("--qdrant-recreate", action="store_true", help="Recreate the Qdrant collection before indexing")
     parser.add_argument("--batch-size", type=int, default=32, help="Documents per embedding/index batch")
     parser.add_argument("--eval-queries", type=Path, default=None, help="Write representative query JSONL here")
     parser.add_argument("--eval-count", type=int, default=500, help="Maximum queries to write")
@@ -262,8 +264,8 @@ def main() -> int:
 
     if args.all_configs and args.input:
         parser.error("--all-configs requires --dataset, not --input")
-    if args.all_configs and args.config:
-        parser.error("Use either --config or --all-configs, not both")
+    if sum([bool(args.all_configs), bool(args.config), bool(args.configs)]) > 1:
+        parser.error("Use only one of --config, --configs, or --all-configs")
     if args.input:
         rows = load_rows_from_file(args.input)
         configs_used: list[str] = []
@@ -278,6 +280,17 @@ def main() -> int:
                     yield from load_rows_from_huggingface(args.dataset, config, split, args.limit)
 
         rows = all_config_rows()
+    elif args.configs:
+        if "MSMARCO-XI" not in args.dataset.upper():
+            parser.error("--configs currently targets ai4bharat/MSMARCO-XI")
+        configs_used = list(args.configs)
+
+        def multi_config_rows():
+            for split in selected_splits:
+                for config in args.configs:
+                    yield from load_rows_from_huggingface(args.dataset, config, split, args.limit)
+
+        rows = multi_config_rows()
     else:
         configs_used = [args.config] if args.config else []
 
@@ -290,17 +303,28 @@ def main() -> int:
     embedder = make_embedder(args.backend, args.model)
     chunker = MultiStrategyChunker(embedder=embedder)
     if args.vector_backend == "qdrant":
+        url = args.qdrant_url or os.getenv("QDRANT_URL", "")
+        api_key = args.qdrant_api_key or os.getenv("QDRANT_API_KEY", "")
+        collection = args.qdrant_collection or os.getenv("QDRANT_COLLECTION", "voice_rag")
         store = QdrantVectorStore(
-            embedder.dim,
-            path=args.qdrant_path,
-            collection=args.qdrant_collection or os.getenv("QDRANT_COLLECTION", "voice_rag"),
-            url=args.qdrant_url or os.getenv("QDRANT_URL") or None,
-            api_key=args.qdrant_api_key or os.getenv("QDRANT_API_KEY") or None,
-            batch_size=int(os.getenv("QDRANT_BATCH_SIZE", "64")),
-            timeout_s=int(os.getenv("QDRANT_TIMEOUT_S", "120")),
+            dim=embedder.dim,
+            url=url,
+            api_key=api_key,
+            collection_name=collection,
+            batch_size=int(os.getenv("QDRANT_BATCH_SIZE", "16")),
+            timeout_s=int(os.getenv("QDRANT_TIMEOUT_S", "300")),
         )
+        if args.qdrant_recreate:
+            try:
+                store.client.delete_collection(collection)
+                print(f"Recreated Qdrant collection: {collection}")
+            except Exception as exc:
+                print(f"Note: could not delete collection: {exc}")
     else:
-        store = LocalVectorStore(embedder.dim)
+        store = LocalVectorStore(
+            path=Path(args.qdrant_path),
+            dim=embedder.dim,
+        )
 
     document_batch: list[Document] = []
     eval_rows: list[dict[str, Any]] = []
