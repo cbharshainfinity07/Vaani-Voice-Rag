@@ -9,9 +9,9 @@ on:
         default: "100"
         type: string
       language_configs:
-        description: "Space-separated list of MSMARCO-XI configs (e.g. 'en hi mr kn')"
+        description: "Space-separated list of MSMARCO-XI configs (e.g. 'hi mr kn te')"
         required: true
-        default: "en hi mr kn"
+        default: "hi mr kn te"
         type: string
 
 jobs:
