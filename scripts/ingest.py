@@ -310,7 +310,7 @@ def main() -> int:
             dim=embedder.dim,
             url=url,
             api_key=api_key,
-            collection_name=collection,
+            collection=collection,
             batch_size=int(os.getenv("QDRANT_BATCH_SIZE", "16")),
             timeout_s=int(os.getenv("QDRANT_TIMEOUT_S", "300")),
         )
