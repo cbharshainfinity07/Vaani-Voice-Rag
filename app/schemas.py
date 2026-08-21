@@ -37,3 +37,4 @@ class PipelineResponse(BaseModel):
     total_latency_ms: float = 0.0
     attempts: dict[str, int] = Field(default_factory=dict)
     error: str | None = None
+    debug: dict[str, Any] = Field(default_factory=dict)
