@@ -45,10 +45,8 @@ class GuardrailEngine:
         if not results:
             return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.")
         best = results[0]
-        # A lexical hit is a strong signal. Otherwise require a high semantic
-        # score so unrelated hash/vector collisions do not become answers.
-        unrelated = best.lexical_overlap <= 0.0 and best.dense_score < self.min_dense_score
-        if unrelated:
+        # Require a minimum semantic match even when lexical overlap is present.
+        if best.dense_score < self.min_dense_score:
             return GuardrailDecision(False, "off_topic", "That question is outside the indexed dataset, so I can't answer it.", best.score)
         if best.score < self.min_retrieval_score:
             return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.", best.score)
@@ -57,8 +55,10 @@ class GuardrailEngine:
     def check_answer(self, answer: str, contexts: list[str]) -> GuardrailDecision:
         if not answer.strip():
             return GuardrailDecision(False, "empty_answer", "I couldn't produce an answer from the retrieved evidence.")
+        # Normalize answer to ignore citation markers and boilerplate prefix
+        clean_answer = re.sub(r"\[S\d+\]|Based on the retrieved evidence: ", "", answer)
         context_tokens = set(tokens(" ".join(contexts)))
-        answer_tokens = set(tokens(answer))
+        answer_tokens = set(tokens(clean_answer))
         overlap = len(context_tokens & answer_tokens) / max(1, len(answer_tokens))
         if overlap < self.min_grounding_overlap:
             return GuardrailDecision(False, "ungrounded_answer", "I don't have enough evidence to support that answer.", overlap)
