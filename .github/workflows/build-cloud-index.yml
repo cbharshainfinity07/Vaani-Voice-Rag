@@ -22,7 +22,7 @@ jobs:
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       QDRANT_URL: ${{ secrets.QDRANT_URL }}
       QDRANT_API_KEY: ${{ secrets.QDRANT_API_KEY }}
-      QDRANT_BATCH_SIZE: "16"
+      QDRANT_BATCH_SIZE: "8"
       QDRANT_TIMEOUT_S: "300"
       HF_HUB_DISABLE_SYMLINKS_WARNING: "1"
     steps:
@@ -50,7 +50,7 @@ jobs:
           --vector-backend qdrant
           --qdrant-collection voice_rag_demo
           --qdrant-recreate
-          --batch-size 16
+          --batch-size 8
           --eval-queries benchmarks/msmarco_xi_eval.jsonl
           --eval-count 500
           --out-index storage/cloud-index.json
