@@ -45,24 +45,20 @@ class GuardrailEngine:
         if not results:
             return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.")
         best = results[0]
-        # Expose scores for debugging via refusal message
-        debug_msg = f"(score={best.score:.3f}, dense={best.dense_score:.3f}, lexical={best.lexical_score:.3f}, overlap={best.lexical_overlap:.3f})"
         # A lexical hit is a strong signal. Otherwise require a high semantic
         # score so unrelated hash/vector collisions do not become answers.
         unrelated = best.lexical_overlap <= 0.0 and best.dense_score < self.min_dense_score
         if unrelated:
-            return GuardrailDecision(False, "off_topic", f"That question is outside the indexed dataset, so I can't answer it. {debug_msg}", best.score)
+            return GuardrailDecision(False, "off_topic", "That question is outside the indexed dataset, so I can't answer it.", best.score)
         if best.score < self.min_retrieval_score:
-            return GuardrailDecision(False, "insufficient_context", f"I don't have enough evidence in the indexed dataset to answer that. {debug_msg}", best.score)
-        return GuardrailDecision(True, score=best.score, message=debug_msg)
+            return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.", best.score)
+        return GuardrailDecision(True, score=best.score)
 
     def check_answer(self, answer: str, contexts: list[str]) -> GuardrailDecision:
         if not answer.strip():
             return GuardrailDecision(False, "empty_answer", "I couldn't produce an answer from the retrieved evidence.")
-        # Normalize answer to ignore citation markers and boilerplate prefix
-        clean_answer = re.sub(r"\[S\d+\]|Based on the retrieved evidence: ", "", answer)
         context_tokens = set(tokens(" ".join(contexts)))
-        answer_tokens = set(tokens(clean_answer))
+        answer_tokens = set(tokens(answer))
         overlap = len(context_tokens & answer_tokens) / max(1, len(answer_tokens))
         if overlap < self.min_grounding_overlap:
             return GuardrailDecision(False, "ungrounded_answer", "I don't have enough evidence to support that answer.", overlap)

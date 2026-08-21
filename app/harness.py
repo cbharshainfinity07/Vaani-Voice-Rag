@@ -105,7 +105,6 @@ class RAGOrchestrator:
                 transcript=transcript,
                 answer=input_decision.message,
                 refusal_reason=input_decision.reason,
-                debug={"input_score": input_decision.score},
             )
 
         try:
@@ -114,18 +113,6 @@ class RAGOrchestrator:
         except Exception as exc:
             return self._response(request, started, timings, attempts, status="error", transcript=transcript, answer="Retrieval failed.", error=public_error("retrieval_failed"))
         if not retrieval_decision.allowed:
-            top = []
-            if results:
-                top = [
-                    {
-                        "score": r.score,
-                        "dense": r.dense_score,
-                        "lexical": r.lexical_score,
-                        "overlap": r.lexical_overlap,
-                        "text": r.chunk.text[:120],
-                    }
-                    for r in results[:3]
-                ]
             return self._response(
                 request,
                 started,
@@ -135,7 +122,6 @@ class RAGOrchestrator:
                 transcript=transcript,
                 answer=retrieval_decision.message,
                 refusal_reason=retrieval_decision.reason,
-                debug={"top_results": top},
             )
 
         contexts = [result.chunk.text for result in results[:3]]
