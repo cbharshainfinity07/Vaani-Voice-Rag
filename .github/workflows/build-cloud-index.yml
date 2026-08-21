@@ -6,12 +6,12 @@ on:
       rows_per_language:
         description: "Rows from each MSMARCO-XI language"
         required: true
-        default: "100"
+        default: "300"
         type: string
       language_configs:
-        description: "Space-separated list of MSMARCO-XI configs (e.g. 'hi mr kn te')"
+        description: "Space-separated list of MSMARCO-XI configs (e.g. 'as bn gu hi kn ml mr ne or pa sa ta te ur')"
         required: true
-        default: "hi mr kn te"
+        default: "as bn gu hi kn ml mr ne or pa sa ta te ur"
         type: string
 
 jobs:
