@@ -45,12 +45,16 @@ class GuardrailEngine:
         if not results:
             return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.")
         best = results[0]
-        # Require a minimum semantic match even when lexical overlap is present.
-        if best.dense_score < self.min_dense_score:
-            return GuardrailDecision(False, "off_topic", "That question is outside the indexed dataset, so I can't answer it.", best.score)
+        # Expose scores for debugging via refusal message
+        debug_msg = f"(score={best.score:.3f}, dense={best.dense_score:.3f}, lexical={best.lexical_score:.3f}, overlap={best.lexical_overlap:.3f})"
+        # A lexical hit is a strong signal. Otherwise require a high semantic
+        # score so unrelated hash/vector collisions do not become answers.
+        unrelated = best.lexical_overlap <= 0.0 and best.dense_score < self.min_dense_score
+        if unrelated:
+            return GuardrailDecision(False, "off_topic", f"That question is outside the indexed dataset, so I can't answer it. {debug_msg}", best.score)
         if best.score < self.min_retrieval_score:
-            return GuardrailDecision(False, "insufficient_context", "I don't have enough evidence in the indexed dataset to answer that.", best.score)
-        return GuardrailDecision(True, score=best.score)
+            return GuardrailDecision(False, "insufficient_context", f"I don't have enough evidence in the indexed dataset to answer that. {debug_msg}", best.score)
+        return GuardrailDecision(True, score=best.score, message=debug_msg)
 
     def check_answer(self, answer: str, contexts: list[str]) -> GuardrailDecision:
         if not answer.strip():
